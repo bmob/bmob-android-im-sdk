@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_find_name"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_normal_shape"
+            android:hint="@string/username"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColorHint="#b3b3b3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/Smile.TextView._White"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/search"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.bmob.im.demo.view.xlist.XListView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/base_horizontal_line"
+        android:dividerHeight="1dp"
+        android:fadingEdgeLength="0dp"
+        android:fastScrollEnabled="true"
+        android:paddingBottom="10dp"
+        />
+
+</LinearLayout>

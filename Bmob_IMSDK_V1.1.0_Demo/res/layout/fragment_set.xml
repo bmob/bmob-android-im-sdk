@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:minHeight="50dp"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_myinfo" />
+
+        <TextView
+            android:id="@+id/tv_set_name"
+            style="@style/Smile.TextView._Black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/register_bottom_arrow" />
+    </RelativeLayout>
+
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+    
+    <RelativeLayout
+        android:id="@+id/layout_blacklist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:minHeight="50dp"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_blacklist" />
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/register_bottom_arrow" />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_switch_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_notify" />
+
+        <ImageView
+            android:id="@+id/iv_open_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/on"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_close_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/off"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_switch_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_voice" />
+
+        <ImageView
+            android:id="@+id/iv_open_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/on"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_close_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/off"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/rl_switch_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/set_vibrate" />
+
+        <ImageView
+            android:id="@+id/iv_open_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/on"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_close_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/off"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_2"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/Smile.Button.logout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="@string/logout" />
+
+</LinearLayout>

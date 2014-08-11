@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <LinearLayout
+        android:id="@+id/layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frame_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_msg_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:contentDescription="@string/action_settings"
+                android:src="@drawable/msg_tips" />
+
+            <ImageView
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6.0dip"
+                android:contentDescription="@string/action_settings"
+                android:padding="5dp"
+                android:src="@drawable/new_friends_icon" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_new_name"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/new_friends"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_below="@id/layout_new"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/layout_near"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6.0dip"
+            android:contentDescription="@string/action_settings"
+            android:padding="5dp"
+            android:src="@drawable/icon_near" />
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/near_people"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true" 
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/avatar"
+            style="@style/Smile.ImageView.Photo_Middle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/avatar"
+            android:textColor="#0F0F0F"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/btn_login_selector"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="同意"
+            android:textColor="@color/base_color_text_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

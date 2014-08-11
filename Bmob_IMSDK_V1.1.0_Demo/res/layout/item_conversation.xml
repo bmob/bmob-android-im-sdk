@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/message_top_height"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="65dp"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" 
+        >
+
+        <ImageView
+            android:id="@+id/iv_recent_avatar"
+            style="@style/Smile.ImageView.Photo_Middle"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head" />
+
+        <TextView
+            android:id="@+id/tv_recent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="58.0dip"
+            style="@style/Smile.TextView._Black"
+            android:layout_toRightOf="@id/iv_recent_avatar"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="@drawable/recent_name_text_color_selector"
+            />
+
+        <TextView
+            android:id="@+id/tv_recent_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_below="@id/tv_recent_name"
+             android:layout_toRightOf="@id/iv_recent_avatar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:textColor="@drawable/recent_message_text_color_selector"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_recent_time"
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_above="@id/tv_recent_msg"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginRight="10dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:singleLine="true"
+            android:textColor="@drawable/recent_message_text_color_selector"
+            android:textSize="10.0sp" />
+
+        <TextView
+            android:id="@+id/tv_recent_unread"
+            android:layout_width="16dip"
+            android:layout_height="16.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_recent_time"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/list_newmessage2"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="10.0dip" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_line_width_1"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/base_horizontal_line" >
+    </View>
+
+</RelativeLayout>
