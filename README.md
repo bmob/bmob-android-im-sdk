@@ -107,8 +107,7 @@ Bmob专注于帮助开发者解决后端云存储，无须搭建后台即可开�
 
 3. 最简洁Viewholder的用法：
 
-论坛内有人分享过的关于Viewholder最简洁用法：http://www.eoeandroid.com/thread-321547-1-1.html
-这可是和实例相结合的哦，相信大家更加容易理解和运用。
+论坛内有人分享过的关于Viewholder最简洁用法：http://www.eoeandroid.com/thread-321547-1-1.html 这可是和实例相结合的哦，相信大家更加容易理解和运用。
 
 4. 最适合做聊天界面的MessageChatadapter的写法：根据不同的消息类型展示不用类型Item界面，利用getItemViewType和getViewTypeCount两个方法。同时和最简洁的Viewholder写法融合起来。
 
