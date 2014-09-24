@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+
+    <ImageView
+        android:id="@+id/img_friend_avatar"
+         style="@style/Smile.ImageView.Photo_Middle"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/action_settings"
+        android:layout_marginTop="6.0dip"
+        android:padding="5dp"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/tv_friend_name"
+        style="@style/Smile.TextView._Black"
+        android:layout_alignTop="@id/img_friend_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6.0dip"
+        android:layout_toRightOf="@id/img_friend_avatar"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+</RelativeLayout>
