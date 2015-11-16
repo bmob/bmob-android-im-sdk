@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_dialog_bg"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/dialog_titleicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/add_avator"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/Smile.TextView._Orange"
+            android:layout_width="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/tips"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/title_red_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/base_horizontal_line_red" />
+
+    <LinearLayout
+        android:id="@+id/dialog_contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/dialog_message"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="match_parent"
+            android:gravity="left|center"
+            android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dialog_customPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:id="@+id/dialog_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cacaca" />
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dialog_leftspacer"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dialog_negativebutton"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0px"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_selector"
+            android:maxLines="2"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cacaca" />
+
+        <Button
+            android:id="@+id/dialog_positivebutton"
+            style="@style/Smile.TextView._Black"
+            android:layout_width="0px"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_selector"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/dialog_rightspacer"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
