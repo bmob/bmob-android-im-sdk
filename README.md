@@ -95,13 +95,13 @@ Bmob即时通讯服务包含了IM聊天所需要的所有核心功能：
 
 ### 快速入门
 
-`BmobIMSDK`是在`Bmob Android SDK`（使用到云数据库、用户管理、文件管理等服务）的基础上实现的，因此，想要在自己的应用中快速集成聊天功能，需要获取Bmob平台的`Application ID`。如果你还不知道怎么获取Application ID，你可以先快速浏览[Android快速入门手册](http://docs.bmob.cn/android/faststart/index.html?menukey=fast_start&key=start_android)。
+`BmobIMSDK`是在`Bmob Android SDK`（使用到云数据库、用户管理、文件管理等服务）、`Bmob Push SD`的基础上实现的，因此，想要在自己的应用中快速集成聊天功能，需要获取Bmob平台的`Application ID`。如果你还不知道怎么获取Application ID，你可以先快速浏览[Android快速入门手册](http://docs.bmob.cn/android/faststart/index.html?menukey=fast_start&key=start_android)。
 
 请按照以下步骤完成IM的集成工作：
 
-#### 1、下载并安装BmobIMSDK
+#### 1、集成IMSDK
 
-1. 下载[IMSDK最新版](http://www.bmob.cn/site/sdk#android_im_sdk_tab)：其包含IMSDK、BmobSDK以及官方demo。
+1. 导入本Github地址内的`BmobIM_V1.1.9`的library源码工程或者直接下载[Bmob_IM_V1.1.9_20150820.zip]()：其包含IMSDK、BmobSDK以及官方demo。
 2. 新建Android工程，将下载下来的官方demo工程中libs下面的BmobIMSDK和配套使用的BmobSDK一起复制到你新建工程的libs。
 
 **注：**
