@@ -101,7 +101,7 @@ Bmob即时通讯服务包含了IM聊天所需要的所有核心功能：
 
 #### 1、集成IMSDK
 
-1. 导入本Github地址内的`BmobIM_V1.1.9`的library源码工程或者直接下载[Bmob_IM_V1.1.9_20150820.zip]()：其包含IMSDK、BmobSDK以及官方demo。
+1. 导入本Github地址内的`BmobIM_V1.1.9`的library源码工程或者直接下载[Bmob_IM_V1.1.9_20150820.zip](https://github.com/bmob/bmob-android-im-sdk/blob/master/Bmob_IM_V1.1.9_20150820.zip)：其包含IMSDK、BmobSDK以及官方demo。
 2. 新建Android工程，将下载下来的官方demo工程中libs下面的BmobIMSDK和配套使用的BmobSDK一起复制到你新建工程的libs。
 
 **注：**
