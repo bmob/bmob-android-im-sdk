@@ -307,7 +307,6 @@ public class MessageChatAdapter extends BaseListAdapter<BmobMsg> {
 								
 								@Override
 								public void onStart() {
-									// TODO Auto-generated method stub
 									progress_load.setVisibility(View.VISIBLE);
 									tv_voice_length.setVisibility(View.GONE);
 									iv_voice.setVisibility(View.INVISIBLE);//只有下载完成才显示播放的按钮

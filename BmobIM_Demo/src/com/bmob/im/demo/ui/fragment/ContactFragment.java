@@ -245,6 +245,7 @@ public class ContactFragment extends FragmentBase implements OnItemClickListener
 		
 		list_friends.setOnTouchListener(new OnTouchListener() {
 
+			@SuppressLint("ClickableViewAccessibility")
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				// Òş²ØÈí¼üÅÌ

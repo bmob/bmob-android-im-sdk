@@ -81,12 +81,6 @@ import com.bmob.im.demo.view.xlist.XListView.IXListViewListener;
  * @author smile
  * @date 2014-6-3 обнГ4:33:11
  */
-/**
- * @ClassName: ChatActivity
- * @Description: TODO
- * @author smile
- * @date 2014-6-23 обнГ3:28:49
- */
 @SuppressLint({ "ClickableViewAccessibility", "InflateParams" })
 public class ChatActivity extends ActivityBase implements OnClickListener,
 		IXListViewListener, EventListener {
